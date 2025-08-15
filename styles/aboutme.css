@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-background: #000000;
+  --color-text: #ffffff;
+  --color-text-highlight: #d3e97a;
+  --color-hover-nav: #ecff96;
+
+  /* color-text-highlight ORIGINAL: #d3e97a */
+
+
+  --font-krona-one: "Krona One", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-style: normal;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.cabecalho {
+  padding: 2% 0% 0% 13%;
+}
+
+.cabecalho__links {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.cabecalho__links__link {
+  font-family: var(--font-montserrat);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text-highlight);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.cabecalho__links__link:hover {
+  color: var(--color-hover-nav);
+}
+
+.principal {
+  padding: 5% 13%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 104px;
+  gap: 80px;
+}
+
+.principal__imagem {
+  display: inline-block;
+  border-radius: 12px;
+  width: 50%;
+}
+
+.principal__conteudo {
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
+  width: 50%;
+}
+
+.principal__conteudo__titulo {
+  text-align: start;
+  text-justify: inter-word;
+  font-size: 2.25rem;
+  font-family: var(--font-krona-one);
+}
+
+.principal__conteudo__descricao {
+  font-size: 1.5rem;
+  font-family: var(--font-montserrat);
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.rodape {
+  padding: 24px;
+  text-align: center;
+  color: var(--color-background);
+  background-color: var(--color-text-highlight);
+  font-family: var(--font-montserrat);
+  font-size: 1.5rem;
+  font-weight: 400px;
+}
+
+@media (max-width: 1200px) {
+  .principal {
+    flex-flow: column;
+  }
+}

@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-background: #000000;
+  --color-text: #ffffff;
+  --color-text-highlight: #d3e97a;
+  --color-hover-nav: #ecff96;
+  --color-type-experience-and-period: #dde0e3;
+  --color-company-name: #edeff1;
+
+  /* color-text-highlight ORIGINAL: #d3e97a */
+
+  --font-krona-one: "Krona One", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-weight-main: 400;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-style: normal;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.cabecalho {
+  padding: 2% 0% 0% 11%;
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
+}
+
+.cabecalho__links {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.cabecalho__links__link {
+  font-family: var(--font-montserrat);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text-highlight);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.cabecalho__links__link:hover {
+  color: var(--color-hover-nav);
+}
+
+.cabecalho__apresentacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 22%;
+}
+
+.cabecalho__apresentacao__titulo {
+  text-align: start;
+  text-justify: inter-word;
+  font-size: 1.5rem;
+  font-family: var(--font-krona-one);
+}
+
+.cabecalho__apresentacao__imagem {
+  width: 9.375rem;
+  height: 9.375rem;
+  border-radius: 50%; 
+}
+
+.principal {
+  padding: 3% 5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.principal__experiences {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  gap: 40px;
+}
+
+.principal__experiences__experience {
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+}
+
+.principal__experiences__experience__rotulo {
+  font-family: var(--font-montserrat);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-main);
+  text-align: start;
+  text-justify: inter-word;
+  color: var(--color-type-experience-and-period);
+}
+
+.principal__experiences__experience__titulo {
+  font-family: var(--font-krona-one);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-align: start;
+  text-justify: inter-word;
+  color: var(--color-text-highlight);
+}
+
+.principal__experiences__experience__empresa {
+  font-family: var(--font-montserrat);
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-main);
+  text-align: start;
+  text-justify: inter-word;
+  color: var(--color-company-name);
+}
+
+.principal__experiences__experience__periodo {
+  font-family: var(--font-montserrat);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-main);
+  text-align: start;
+  text-justify: inter-word;
+  color: var(--color-type-experience-and-period);
+}
+
+.principal__experiences__experience__descricao {
+  font-family: var(--font-montserrat);
+  font-size: 1rem;
+  font-weight: var(--font-weight-main);
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.principal__infos {
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+}
+
+.principal__infos__info__lista {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  list-style: none;
+}
+
+.principal__infos__info__lista__elemento {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: var(--font-weight-main);
+  text-align: start;
+  text-justify: inter-word;
+}
+
+.principal__infos__info__titulo {
+  font-family: var(--font-krona-one);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-align: start;
+  text-justify: inter-word;
+  color: var(--color-text-highlight);
+}
+
+.rodape {
+  padding: 20px;
+  text-align: center;
+  color: var(--color-background);
+  background-color: var(--color-text-highlight);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-main);
+}
