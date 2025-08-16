@@ -174,4 +174,8 @@ body {
   .cabecalho__links {
     gap: 50px;
   }
+
+  .principal__imagem {
+    width: 80%;
+  }
 }

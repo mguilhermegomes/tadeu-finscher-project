@@ -139,7 +139,7 @@ body {
   font-family: var(--font-montserrat);
   font-size: 1rem;
   font-weight: var(--font-weight-main);
-  text-align: justify;
+  text-align: start;
   text-justify: inter-word;
 }
 
@@ -181,4 +181,48 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   font-weight: var(--font-weight-main);
+}
+
+@media (max-width: 676px) {
+  .cabecalho {
+    padding: 2% 0% 0% 0%;
+  }
+
+  .cabecalho__links {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .cabecalho__apresentacao {
+    padding: 0%;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .principal {
+    justify-content: flex-start;
+  }
+
+  .principal__experiences {
+    width: auto;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .cabecalho__links {
+    gap: 20px;
+  }
+
+  .cabecalho__links__link {
+    font-size: 1.3rem;
+  }
+
+  .cabecalho__apresentacao {
+    flex-flow: column-reverse;
+  }
+
+  .principal {
+    padding: 10% 5%;
+  }
 }
